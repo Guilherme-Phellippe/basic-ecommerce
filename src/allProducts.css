@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap');
+
+:root{
+    --text: hsl(0, 0%, 14%);
+    --main:  #6CA898;
+    --main-shadow: #244D4D;
+    --main-shadow-2: #345e5e;
+    --complementar-2: #A9F5E0;
+}
+
+
+*{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+/*  SECTION FORMAS DE PAGAMENTOS*/ 
+main {
+    width: 98.7vw;
+    height: auto;
+    overflow-x: hidden;
+}
+main section {
+    width: 100%;
+    height: 35%;
+    min-height: 200px;
+    max-height: 320px;
+    display: grid;
+    place-items: center;
+}
+
+main section .box-form-payments{
+    width: 80%;
+    min-width: 600px;
+    height: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+main section .box-form-payments div{
+    width: 30%;
+    height: 100%;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+main section .box-form-payments div:first-of-type{
+    border-left: 4px solid var(--main-shadow);
+    border-right: 1px solid #00000030;
+    width: 40%;
+    color: var(--text);
+    margin-left: 0%;
+}
+main section .box-form-payments div:first-of-type h3{
+    width: 100%;
+    font-size: max(1.8vw, 1rem);
+    font-weight: 300;
+    text-align: center;
+
+}
+
+main section .box-form-payments div i{
+    font-size: max(1.5vw , 1rem);
+    color: var(--main);
+    margin-right: 5%;
+}
+main section .box-form-payments div p{
+    font-size: max(1.4vw , .7rem);
+    color: var(--text);
+    text-align: center;
+}
+
+/* BEST SELLERS*/
+
+main #best-sellers{
+    width: 99%;
+    height: 35%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #best-sellers > h3{
+    width: 80%;
+    font-size: max(3vw, 1rem);
+    padding: 2% 0;
+    color: var(--main-shadow-2);
+}
+
+main #best-sellers .sellers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #best-sellers .sellers div{
+    background-color: #F5F5F5;
+    width: 20%;
+    height: auto;
+    margin: 0 3%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: height .5s;
+}
+main #best-sellers .sellers div .img{
+    width: auto;
+    height: 70%;
+    border-bottom: 1px solid #24242450;
+    display: grid;
+    place-items: center;
+
+}
+main #best-sellers .sellers div .img img{
+    width: 80%;
+}
+
+main #best-sellers .sellers div div:nth-child(2){
+    width: 100%;
+    border-radius: 0;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+}
+main #best-sellers .sellers div div:nth-child(2) p:first-child{
+    text-decoration: line-through;
+    font-size: max(1.3vw, .8rem);
+    margin-left: 2%;
+}
+
+main #best-sellers .sellers div div:nth-child(2) p:last-child{
+    font-size: max(2vw, 1.3rem);
+    margin-left: 2%;
+}
+
+main #best-sellers .sellers div > span{
+    color: green;
+    margin-left: 2%;
+}
+main #best-sellers .sellers div > h3{
+    color: var(--main-shadow-2);
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    visibility: hidden;
+    transition: .1s;
+}
+main #best-sellers .sellers div:hover > h3{
+    visibility: visible;
+    transform: translateY(30px);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.3);
+}
+main #best-sellers .sellers > div:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+}
+/* TODAS AS DICAS*/
+
+main #all-products{
+    width: 99%;
+    height: 35%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #all-products > h3{
+    width: 80%;
+    font-size: max(3vw, 1rem);
+    padding: 2% 0;
+    margin: 8% 0;
+    color: var(--main-shadow-2);
+}
+
+main #all-products .all-sellers{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #all-products .all-sellers div{
+    background-color: #F5F5F5;
+    width: 15%;
+    height: auto;
+    margin: 0 3%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: height .5s;
+}
+main #all-products .all-sellers div .img{
+    width: auto;
+    height: 70%;
+    border-bottom: 1px solid #24242450;
+    display: grid;
+    place-items: center;
+
+}
+main #all-products .all-sellers div .img img{
+    width: 80%;
+}
+
+main #all-products .all-sellers div div:nth-child(2){
+    width: 100%;
+    border-radius: 0;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
+}
+main #all-products .all-sellers div div:nth-child(2) p:first-child{
+    text-decoration: line-through;
+    font-size: max(1.1vw, .7rem);
+    margin-left: 2%;
+}
+
+main #all-products .all-sellers div div:nth-child(2) p:last-child{
+    font-size: max(1.8vw, 1rem);
+    margin-left: 2%;
+}
+
+main #all-products .all-sellers div > span{
+    color: green;
+    margin-left: 2%;
+}
+main #all-products .all-sellers div > h3{
+    color: var(--main-shadow-2);
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    visibility: hidden;
+    transition: .1s;
+}
+main #all-products .all-sellers div:hover > h3{
+    visibility: visible;
+    transform: translateY(30px);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.3);
+}
+main #all-products .all-sellers > div:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-color: var(--main-shadow);
+}
+
+footer > div:first-of-type {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > div:first-of-type h2{
+    color: whitesmoke;
+}
+
+footer > div:first-of-type button{
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+    font-size: max(1vw , .8rem);
+    transition: all .3s;
+}
+
+footer > div:first-of-type button:hover{
+    background-color: rgb(6, 109, 6);
+}
+
+footer > div:first-of-type button i{
+    color: whitesmoke;
+    margin-left: 4%;
+}
+
+footer > div:last-of-type {
+    width: 80%;
+    height: 50%;
+    display: flex;
+}
+
+footer > div:last-of-type > div{
+    width: 24%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer > div:last-of-type > div p{
+    color: rgba(245, 245, 245, 0.6);
+}
+
+footer > div:last-of-type > div h2,
+footer > div:last-of-type > div i{
+    color: whitesmoke;
+}
+
+footer > div:last-of-type > div i {
+    font-size: max(1.2vw , 1rem);
+}
+footer > div:last-of-type > div:nth-of-type(1){
+    width: 28%;
+}
+footer > div:last-of-type > div:nth-of-type(1) > img{
+    width: 50%;
+}
+footer > div:last-of-type > div:nth-of-type(1) p{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2%;
+}

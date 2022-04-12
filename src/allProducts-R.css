@@ -1,0 +1,59 @@
+@media (max-width: 480px) {
+    /*  SECTION FORMAS DE PAGAMENTOS*/ 
+
+    main section .box-form-payments{
+        width: 90%;
+        min-width: 0px;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    main section .box-form-payments div{
+        width: 28%;
+        height: 50%;
+        flex-direction: column;
+    }
+
+    main section .box-form-payments div:first-of-type{
+        width: 100%;
+        height: 40%;
+    } 
+
+    /* BEST SELLERS*/
+
+    main #best-sellers{
+        height: 180vh;
+        max-height: none;
+    }
+
+    main #best-sellers > h3{
+        font-size: max(6vw, 1.5rem);
+    }
+
+    main #best-sellers .sellers{
+        flex-flow: column;
+    }
+
+    main #best-sellers .sellers div{
+        width: 70%;
+        margin: 5% 0%;
+    }
+    /* TODAS AS DICAS*/
+
+    main #all-products{
+        height: auto;
+        max-height: none;
+    }
+
+    main #all-products > h3{
+        font-size: max(7vw, 1.3rem);
+    }
+
+    main #all-products .all-sellers{
+        flex-flow: row wrap;
+    }
+
+    main #all-products .all-sellers div{
+        width: 40%;
+        margin: 5% 3%;
+    }
+}

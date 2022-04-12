@@ -1,0 +1,400 @@
+:root{
+    --text: hsl(0, 0%, 14%);
+    --main:  #6CA898;
+    --main-shadow: #244D4D;
+    --main-shadow-2: #345e5e;
+    --complementar-2: #A9F5E0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width: 780px) {
+    header{
+        height: 8vh;
+        min-height: 80px;
+    }
+    header .logo{
+        width: 40%;
+        margin-left: 5%;
+    }
+    header nav > ul{
+        display: none;
+    }
+
+    header .search{
+        min-width: 100px;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    header .search i:last-of-type{
+        display: block;
+    }
+
+    header nav > .nav-mobile{
+        display: none;
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100vw);
+        box-shadow: -1px -1px 10px rgba(0, 0, 0, 0.5) ;
+        transition: transform 1s , opacity .5s;
+    }
+
+    header nav > .open-mobile{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+    header nav > .nav-mobile #close-mobile{
+        padding: 10px;
+        margin: 2% 4% 4% 0;
+        align-self: flex-end;
+        font-size: max(2vw , 1.5rem);
+        font-weight: 500;
+    }
+
+    header nav > .nav-mobile > .search-mobile{
+        width: 70%;
+        height: 6%;
+        min-height: 40px;
+        margin: 2% 0 6% 0;
+        background-color: white;
+        border: 2px solid var(--main-shadow);
+        outline: none;
+        padding: 0 2%;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    header nav > .nav-mobile > .search-mobile > input{
+        width: 85%;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: max(1.5vw , 1rem);
+    }
+    header nav > .nav-mobile > .search-mobile > i{
+        color:var(--main-shadow);
+        font-size: max(2vw, 1.5rem);
+    }
+
+    header nav > .nav-mobile ul{
+        flex-flow: column nowrap;
+        height: 40%;
+    }
+    header nav > .nav-mobile ul li{
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+    header nav > .nav-mobile ul li a div{
+        display: none;
+    }
+    header nav > .nav-mobile ul li:first-of-type a{
+        border-top: 1px solid var(--main-shadow) ;
+    }
+    header nav > .nav-mobile ul li a{
+        color: var(--text);
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--main-shadow) ;
+        width: 100%;
+        padding: 4% 0;
+        text-align: center;
+        font-size: max(2vw , 1.1rem);
+    }
+    header nav > .nav-mobile ul li a:hover{
+        background-color: var(--main);
+    }
+    header nav > .nav-mobile h2{
+        display: flex;
+        color: white;
+    }
+    header nav > .nav-mobile .social-midia{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 20%;
+    }
+
+.social-midia a:first-of-type i{
+        color: green;
+    }
+.social-midia a i{
+        font-size: max(2.5vw , 1.5rem);
+        color: rgb(55, 55, 216);
+    }
+.social-midia a:last-of-type i{
+        color: #BC319E;
+    }
+
+    header nav > .nav-mobile .social-midia a{
+        text-decoration: none;
+        font-size: max(1.3vw , .8rem);
+        margin-left: 4%;
+        color: inherit;
+    }
+    /* MAIN */
+
+    main {
+        height: 92vh;
+    }
+
+    main > .box-img{
+        width: 100%;
+        height: 80%;
+        background-size: cover;
+        background-position: top left;
+        position: relative;
+    }
+    main > .box-img > .box-info{
+        width: 40%;
+        height: 70%;
+        position: absolute;
+        top: 15%;
+        left: 0%;
+    }
+    /* PRESENTINHOS DA DIVA */
+    
+    /* SOBRE DONA DIVA*/
+    .about .all-about{
+        width: 90%;
+    }   
+    /* SECTION - CONTACT */
+    .contact .all-contact {
+        width: 95%;
+    }
+
+    .contact .all-contact .circle{
+        top: -10%;
+        left: -10%;
+    }
+    
+    
+    .contact .all-contact > p{
+        width: 60%;
+    }
+    .contact .all-contact .box-feedbacks{
+        width: 80%;
+    }
+
+    /* FOOTER */
+
+    footer > div:first-of-type {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header nav > .nav-mobile{
+        width: 100%;
+    }
+    main > .box-img{
+        height: 90%;
+        background: url(../../images/homedivaMobile.webp) no-repeat;
+        background-position: top left;
+        background-size: cover; 
+    }
+    main > .box-img > .box-info{
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 15%;
+        left: 2%;
+    }
+    main > .box-img > .box-info h2{
+        font-size: max(2.2vw, 1.1rem);
+        line-height:max(2.4vw, 1.3rem); 
+    }
+    main > .box-img > .box-info > p{
+        font-size: max(2vw , .8rem);
+    }
+    
+    .gifts{
+        height: 45vh;
+    }
+    
+    .gifts .all-gifts{
+        width: 100%;
+        height: 80%;
+        justify-content: space-around;
+    }
+
+    .gifts .all-gifts > div {
+        flex-direction: column;
+    }
+    .gifts .all-gifts > div > div{
+        width: 80%;
+    }
+    .gifts .all-gifts > div div:last-of-type{
+        margin-top: 5%;
+    }
+    .gifts .all-gifts > div:first-of-type > div:first-of-type{
+        width: 100%;
+    }
+    
+    .gifts .all-gifts > div:first-of-type h2{
+        font-size: max(2.3vw , 1rem);
+        line-height: max(2.5vw, 1.3rem);
+    }
+    .gifts .all-gifts > div:first-of-type div:first-of-type p{
+        font-size: max(1.3vw , .8rem);
+    }
+    .gifts .all-gifts > div h3{
+        font-size: max(1.2vw , .8rem);
+    }
+    .gifts .all-gifts > div p{
+        font-size: max(1vw , .7rem);
+
+    }
+    .about{
+        margin-top: 30px;
+        height: 100vh;
+        justify-content: center;
+    }
+    .about .all-about{
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .all-about .about-diva h2{
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: max(2.3vw , 1.3rem);
+    }
+    .about .all-about .about-diva > p{
+        width: 80%;
+        font-size: max(1vw , .7rem);
+        margin-bottom: 2%;
+    }
+    .about .all-about .content-about{
+        height: 80%;
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .about .all-about .content-about > div:first-of-type{
+        width: 100%;
+        grid-row-gap: 5%;
+    }
+    .about .all-about .content-about div:first-of-type > div h2{
+        font-size: max(2vw , 1rem);
+    }
+    
+    .about .all-about .content-about div:first-of-type > div h3{
+        font-size: max(1.3vw , .8rem);
+    }
+    
+    .about .all-about .content-about div:first-of-type > div p{
+        font-size: max(1vw , .6rem);
+        width: 80%;
+    }
+    .about .all-about .content-about > div:last-of-type{
+        width: 100%;
+        margin-top: 12%;
+    }
+    
+    .about .all-about .content-about div:last-of-type #column1 img,
+    .about .all-about .content-about div:last-of-type #column2 img{
+        width: 75%;
+    }
+
+    /* SECTION - BEST-DICA */
+
+    .best-dicas{
+        margin-top: 30px;
+    }
+    .best-dicas .all-dicas{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'title title link link'
+                            '. p1 p1 .'
+                            'p2 p2 p3 p3';
+    }
+    .best-dicas .all-dicas h2{
+        font-size: max(2.2vw , 1.2rem);
+    }
+    .best-dicas .all-dicas > div{
+        width: 90%;
+    }
+    .best-dicas .all-dicas > div:first-of-type{
+        width: 100%;
+    }
+    .best-dicas .all-dicas > div h3{
+        font-size: max(1.7vw , .9rem);
+    }
+    /* SECTION - CONTACT */
+    .contact .all-contact {
+        width: 100%;
+    }
+    .contact .all-contact .circle{
+        height: 20%;
+        border: 40px solid var(--main-shadow);
+        outline: 20px solid var(--main-shadow);
+        top: -10%;
+        left: -10%;
+    }
+
+    .contact .all-contact > h2:first-of-type{
+        margin-left: 15%;
+    }
+    .contact .all-contact > p{
+        width: 90%;
+    }
+    .contact .all-contact .box-feedbacks{
+        width: 100%;
+    }
+    .contact .all-contact .box-feedbacks .feedbacks {
+        width: 85%;
+    }
+
+    /* footer */
+
+    footer > div:first-of-type {
+        width: 94%;
+        align-items: flex-start;
+    }
+    footer > div:first-of-type h2{
+        font-size: max(1.5vw , 1rem);
+        text-align: center;
+        width: 60%;
+    }
+    footer > div:first-of-type button{
+        width: 30%;
+    }
+    footer > div:last-of-type {
+        width: 95%;
+        justify-content: center;
+    }
+    footer > div:last-of-type > div{
+        width: 24%;
+        margin-left: 1%;
+        height: auto;
+    }
+
+    footer > div:last-of-type > div p{
+        font-size: max(1vw , .7rem);
+    }
+    footer > div:last-of-type > div h2,
+    footer > div:last-of-type > div i{
+        font-size: max(1.2vw , .8rem);
+    }
+    footer > div:last-of-type > div:nth-of-type(1) > img{
+        width: 80%;
+    }
+    
+}

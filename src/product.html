@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovo temporizador - ovos cozidos no seu ponto desejado</title>
+    <link rel="shortcut icon" href="../images/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="./indexR.css">
+    <link rel="stylesheet" href="./productR.css">
+    <script src="./stock.js" defer></script>
+    <script src="./product.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../images/logo.webp" alt="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home <div></div></a></li>
+                <li><a href="../index.html#about">Sobre <div></div></a></li>
+                <li><a href="../index.html#best-dicas">Best dicas <div></div></a></li>
+                <li><a href="../index.html#contact">Contato <div></div></a></li>
+            </ul>
+            <div class="nav-mobile">
+                <span id="close-mobile">X</span>
+                <div class="search-mobile">
+                    <input type="text" name="search-mobile" id="search-mobile" placeholder="Procurando algo?">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul>
+                    <li><a href="/index.html">Home <div></div></a></li>
+                    <li><a href="/index.html#about">Sobre <div></div></a></li>
+                    <li><a href="/index.html#best-dicas">Best dicas <div></div></a></li>
+                    <li><a href="/index.html#contact">Contato <div></div></a></li>
+                </ul>
+                <div class="social-midia">
+                    <i class="fab fa-whatsapp"> <span>Whatsapp</span></i>
+                    <i class="fab fa-facebook"> <span>Facebook</span></i>
+                    <i class="fab fa-facebook-messenger"> <span>manssager</span></i>
+                </div>
+            </div>
+        </nav>
+        <div class="search">
+            <input type="search" class="a" name="search" id="search" placeholder="Digite algo...">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="small-imgs">
+                <img id="img1" src="" alt="" width="70%">
+                <img id="img2" src="" alt="" width="70%">
+                <img id="img3" src="" alt="" width="70%">
+                <img id="img4" src="" alt="" width="70%">
+            </div>
+            <div class="big-img">
+                <video width="90%" height="80%" controls autoplay>
+
+                </video>
+            </div>
+            <div class="info" id="info">
+                <span>Novo | 763 vendidos </span>
+                <h1 id="name"></h1>
+                <span id="describe"></span>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half"></i>
+                    <a href="#feedbacks">13 Avaliações</a>
+                </div>
+                <p>mais vendido</p>
+                <div>
+                    <span>de</span>
+                    <span id="old_price"></span>
+                    <span>por</span>
+                    <span id="price"></span>
+                </div>
+                <h3>Meios de pagamentos:</h3>
+                <img src="../images/meios-de-pagamento-justdream.png" alt="">
+                <p><i class="fas fa-truck"></i> FRETE GRÁTIS <strong><i class="fas fa-bolt"></i> FULL</strong></p>
+                <h3>Modelo:</h3>
+                <div id="models"></div>
+                <p>Estoque Limitado - 125 unidades restantes</p>
+                <div class="button">
+                    <button>Comprar agora</button>
+                    <div class="box-load">
+                        <div class="sub-box-load">
+                            <h2>Aguarde enquanto estamos processando seu pedido</h2>
+                            <div class="load">
+                                <div class="load2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="good-product">
+                    <p><i class="fas fa-check"></i> Entrega rápida</p>
+                    <span>Entrega Expressa de 1 á 2 semanas em sua casa.</span>
+                    <p><i class="fas fa-check"></i> Devolução grátis</p>
+                    <span>Você tem 30 dias a partir da data de recebimento.</span>
+                    <p><i class="fas fa-check"></i> Produto origem de fabrica</p>
+                    <span>preparado e enviado direto da fabrica até sua casa</span>
+                    <p><i class="fas fa-check"></i> Frete grátis</p>
+                    <span>Sem taxas adicionais na entrega, você paga só o produto</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="feedbacks" id="feedbacks">
+        <h3>Quem comprou , aprovou.</h3>
+        <div class="clients-feedbacks">
+
+        </div>
+        <div id="your-feedback">
+            <h3>Seu produto já chegou?</h3>
+            <p>Deixe seu feedback conosco</p>
+            <textarea name="feedback" id="feedback" cols="100" rows="7"></textarea>
+            <button>Enviar</button>
+        </div>
+
+        <div class="box-notBuy">
+            <div class="notBuy">
+                <span>X</span>
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Falha ao deixar seu feedback</h3>
+                <p>Apenas usuários que já adquiriram o produto podem deixar comentários</p>
+                <a href="">Compre já o seu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- politica privacidade -->
+    <div id="box__politica">
+        <h2>Dicas da dona Diva e os cookies: a gente usa cookies para personalizar anúncios e melhorar a sua experiência
+            no site. Ao continuar navegando, você concorda com a nossa <a
+                href="https://www.dicasdadonadiva.com.br/home/politica-privacidade/" target="_blank">Política de
+                Privacidade</a> e com <a href="https://www.dicasdadonadiva.com.br/home/termos-de-uso/"
+                target="_blank">Termos de uso</a> <button>Aceitar e continuar</button></h2>
+    </div>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1150433062160380');
+        fbq('track', 'PageView');
+        
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1150433062160380&ev=PageView&noscript=1" /></noscript>
+
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>
